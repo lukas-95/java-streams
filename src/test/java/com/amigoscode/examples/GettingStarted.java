@@ -38,6 +38,5 @@ public class GettingStarted {
         List<Person> people = MockData.getPeople();
         List<Person> collected = people.stream().filter(person -> person.getAge() <= 18).limit(10).toList();
         collected.forEach(System.out::println);
-
     }
 }
